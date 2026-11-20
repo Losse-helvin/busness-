@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- REMPLACER : titre = "{{NOM}} — {{MÉTIER}} à {{VILLE}}" -->
+<title>{{NOM}} — {{MÉTIER}} à {{VILLE}}</title>
+<meta name="description" content="{{MÉTIER}} à {{VILLE}}. {{PROMESSE_COURTE}} Contact et devis rapide.">
+<style>
+  :root{--prim:#0b5cff;--primb:#073da6;--bg:#f6f9ff;--ink:#11203a;--mut:#5b6b85}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:680px;margin:0 auto;padding:0 18px}
+  header{background:linear-gradient(160deg,#eaf1ff,#f6f9ff);padding:48px 0 36px;text-align:center}
+  header h1{font-size:28px;margin-bottom:8px}
+  header p{color:var(--mut);font-size:16px}
+  .btn{display:inline-block;background:var(--prim);color:#fff;font-weight:700;padding:13px 24px;border-radius:999px;margin-top:16px}
+  section{padding:34px 0}
+  h2{font-size:21px;margin-bottom:10px;color:var(--primb)}
+  .card{background:#fff;border:1px solid #e7eefc;border-radius:14px;padding:20px;margin-bottom:14px;box-shadow:0 8px 30px rgba(11,92,255,.08)}
+  .serv li{list-style:none;padding:6px 0 6px 24px;position:relative}
+  .serv li:before{content:"✓";position:absolute;left:0;color:#12b886;font-weight:800}
+  .contact a{color:var(--prim);font-weight:600}
+  footer{background:var(--ink);color:#cdd9ef;padding:24px 0;text-align:center;font-size:13px}
+  /* Adapté mobile-first : tout est empilé par défaut, pas besoin de media query pour un site 1 page */
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <!-- REMPLACER {{NOM}}, {{MÉTIER}}, {{VILLE}} -->
+    <h1>{{NOM}}</h1>
+    <p>{{MÉTIER}} à {{VILLE}} — {{PROMESSE_COURTE}}</p>
+    <a class="btn" href="#contact">Prendre rendez-vous / Devis</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Qui suis-je</h2>
+    <div class="card">
+      <!-- REMPLACER par 2-3 phrases rédigées par IA à partir des infos client -->
+      <p>{{PARAGRAPHE_PRESENTATION}}</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap">
+    <h2>Mes services</h2>
+    <ul class="card serv">
+      <!-- REMPLACER : 3 à 5 services -->
+      <li>{{SERVICE_1}}</li>
+      <li>{{SERVICE_2}}</li>
+      <li>{{SERVICE_3}}</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Zone d'intervention</h2>
+    <div class="card">
+      <p>Je travaille à {{VILLE}} et ses alentours ({{ZONE}}).</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:#fff">
+  <div class="wrap">
+    <h2>Contact &amp; devis</h2>
+    <div class="card contact">
+      <!-- REMPLACER par les vrais liens -->
+      <p>📞 Téléphone : <a href="tel:{{TEL}}">{{TEL}}</a></p>
+      <p>✉️ Email : <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+      <p>💬 WhatsApp : <a href="https://wa.me/{{WHATSAPP}}">Écrivez-moi</a></p>
+      <!-- Carte Google Maps : remplacer l'URL par l'embed de l'adresse du client -->
+      <p>📍 {{ADRESSE}}, {{VILLE}}</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © {{ANNEE}} {{NOM}} — {{MÉTIER}} à {{VILLE}} · Site réalisé par WebPourPros
+  </div>
+</footer>
+</body>
+</html>
