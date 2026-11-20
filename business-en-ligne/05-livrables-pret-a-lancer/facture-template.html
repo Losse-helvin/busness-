@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modèle de facture — WebPourPros</title>
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#11203a;max-width:800px;margin:32px auto;padding:0 20px;line-height:1.5}
+  h1{font-size:22px;margin:0}
+  .flex{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:18px 0}
+  .box{border:1px solid #d4def0;border-radius:10px;padding:12px 14px;flex:1;min-width:240px}
+  .box h3{font-size:13px;text-transform:uppercase;color:#5b6b85;margin:0 0 6px}
+  table{width:100%;border-collapse:collapse;margin:16px 0}
+  th,td{border-bottom:1px solid #e7eefc;text-align:left;padding:8px 6px;font-size:14px}
+  th{background:#f6f9ff;color:#073da6}
+  .tot{text-align:right;font-size:18px;font-weight:800;margin-top:10px}
+  .tvam{background:#eafaf3;border:1px solid #c7eedd;border-radius:8px;padding:10px;font-size:13px;color:#0c6b4f;margin-top:14px}
+  .pay{background:#eaf1ff;border:1px solid #c7d8f7;border-radius:8px;padding:10px;font-size:14px;margin-top:14px}
+  .foot{margin-top:24px;font-size:12px;color:#5b6b85;border-top:1px solid #e7eefc;padding-top:12px}
+  @media print{body{margin:0}}
+</style>
+</head>
+<body>
+
+  <div class="flex" style="align-items:flex-end">
+    <div>
+      <h1>WEBPOURPROS</h1>
+      <div>Création de sites vitrines clés en main</div>
+      <div>contact@webpourpros.example · Prestataire indépendant (Madagascar)</div>
+    </div>
+    <div style="text-align:right">
+      <h1 style="color:#0b5cff">FACTURE</h1>
+      <div>N° <b>{{NUMERO_FACTURE}}</b></div>
+      <div>Date : {{DATE}}</div>
+    </div>
+  </div>
+
+  <div class="flex">
+    <div class="box">
+      <h3>Émetteur</h3>
+      WebPourPros<br>
+      [Votre nom / statut légal MG]<br>
+      Email : contact@webpourpros.example
+    </div>
+    <div class="box">
+      <h3>Client (professionnel)</h3>
+      {{NOM_CLIENT}}<br>
+      {{SOCIETE_CLIENT}}<br>
+      {{ADRESSE_CLIENT}}, {{VILLE_CLIENT}}<br>
+      N° TVA intra. : {{TVA_CLIENT}}
+    </div>
+  </div>
+
+  <table>
+    <thead><tr><th>Désignation</th><th>Formule</th><th>Prix unitaire HT</th><th>Total HT</th></tr></thead>
+    <tbody>
+      <tr><td>{{DESIGNATION_1}} (site livré le {{DATE_LIVRAISON}})</td><td>{{FORMULE_1}}</td><td>{{PU_1}} €</td><td>{{TOTAL_1}} €</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tot">Total à payer : {{TOTAL_HT}} € HT</div>
+
+  <div class="tvam">
+    ⚠️ <b>TVA non applicable — article 196 de la directive 2006/112/CE.</b>
+    Prestation B2B fournie par un prestataire établi hors UE (Madagascar) à un professionnel assujetti établi dans l'UE :
+    l'autoliquidation (reverse charge) s'applique. Le client autoliquide la TVA dans son pays.
+  </div>
+
+  <div class="pay">
+    💳 <b>Règlement :</b> par carte ou virement sécurisé via Payoneer (lien de paiement envoyé par email),
+    ou par virement SWIFT direct vers notre compte bancaire (demander le RIB/IBAN). Référence à indiquer : {{NUMERO_FACTURE}}.
+  </div>
+
+  <div class="foot">
+    WebPourPros — prestataire indépendant établi à Madagascar. Facture acquittée après paiement.
+    Données traitées conformément au RGPD, uniquement pour la gestion de la prestation.
+  </div>
+
+</body>
+</html>

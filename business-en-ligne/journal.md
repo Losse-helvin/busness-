@@ -38,5 +38,28 @@
 
 ---
 
+## 📅 2026-11-20 — J1 (exécution builder)
+
+### Actions faites (builder, sans dépense)
+- **Templates devis + facture HT** créés (`devis-template.html`, `facture-template.html`) avec mention reverse charge (art. 196 directive 2006/112/CE) pour la facturation B2B hors UE.
+- **2 sites démo réels** construits (`demo-coiffure-lyon.html`, `demo-plomberie-bordeaux.html`) et liés dans `index.html` (section « Exemples »). L'offre est désormais crédible, sans faux témoignage.
+- **Préparation déploiement** : `docs/index.html` (copie de la page) + `docs/.nojekyll` créés pour GitHub Pages.
+- **Tentative d'activation GitHub Pages via API** → refusée (403 « Resource not accessible by integration ») : le token Arena ne gère pas Pages. À activer une fois dans **Settings → Pages** par l'humain (voir ci-dessous).
+- **Aperçu live lancé** (serveur port 8000) pour validation visuelle immédiate de la page et des démos.
+- **Coût dépensé : 0 €** ✅.
+
+### Reste à faire (humain)
+- [ ] **Ouvrir le compte Payoneer** (pièce d'ID malgache) + activer le compte de réception **EUR** + la fonction **Payment Request**. *Blocant avant prospection.*
+- [ ] **Activer l'hébergement public** (une fois) : dans le dépôt GitHub → *Settings → Pages → Source : branche `arena/ba7d47a4-busness`, dossier `/docs`* → Save. URL obtenue : `https://losse-helvin.github.io/busness-/`. (Alternative : Netlify Drop en glissant le dossier `05-livrables-pret-a-lancer/`.)
+- [ ] **Confirmer la ville/métier cible n°1** et avoir un **proche français** pour le test de paiement J3.
+- [ ] Valider le **statut de facturation** en Madagascar avec un comptable.
+
+### Plan J2 (demain)
+- Lister 30–50 cibles FR (Maps + groupes FB/LinkedIn) dans le suivi.
+- Préparer le 1er message de prospection (script A) personnalisé.
+- **J3 (test obligatoire)** : envoyer une Payment Request Payoneer à un proche français (2–5 €), il paie, vous lancez le retrait vers MCB et confirmez l'arrivée.
+
+---
+
 ## 📅 À VENIR
 _(Remplir chaque jour selon le plan J1-30.)_
