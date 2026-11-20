@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site clé en main pour votre entreprise — Livré en 5 jours</title>
+<meta name="description" content="Un site professionnel mobile-first qui amène des clients, livré en 5 jours ouvrés, prix fixe, sans engagement. Pour artisans, commerçants, coaches et professions libérales en France.">
+<style>
+  :root{
+    --bleu:#0b5cff; --bleu-fonce:#073da6; --vert:#12b886; --noir:#11203a;
+    --gris:#5b6b85; --fond:#f6f9ff; --blanc:#fff; --ombre:0 8px 30px rgba(11,92,255,.10);
+    --rayon:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--noir);background:var(--fond);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--bleu);text-decoration:none}
+  .container{max-width:880px;margin:0 auto;padding:0 18px}
+  header.nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);
+    border-bottom:1px solid #e7eefc;z-index:50}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .logo{font-weight:800;font-size:18px;color:var(--bleu-fonce)}
+  .nav a.cta{padding:9px 16px;background:var(--bleu);color:#fff;border-radius:999px;font-weight:700;font-size:14px}
+  .hero{background:linear-gradient(160deg,#eaf1ff,#f6f9ff);padding:54px 0 40px;text-align:center}
+  .badge{display:inline-block;background:#e3f3ec;color:var(--vert);font-weight:700;font-size:13px;
+    padding:6px 14px;border-radius:999px;margin-bottom:16px}
+  h1{font-size:30px;line-height:1.25;color:var(--noir);margin-bottom:14px}
+  h1 span{color:var(--bleu)}
+  .hero p.sub{font-size:17px;color:var(--gris);max-width:560px;margin:0 auto 26px}
+  .btn{display:inline-block;background:var(--bleu);color:#fff;font-weight:700;padding:14px 26px;
+    border-radius:999px;font-size:16px;box-shadow:var(--ombre);border:none;cursor:pointer}
+  .btn.ghost{background:#fff;color:var(--bleu);border:2px solid var(--bleu)}
+  .btn.vert{background:var(--vert)}
+  .proofline{margin-top:18px;font-size:13px;color:var(--gris)}
+  section{padding:46px 0}
+  h2{font-size:24px;color:var(--noir);margin-bottom:8px}
+  .lead{color:var(--gris);margin-bottom:26px;font-size:16px}
+  .grid{display:grid;gap:16px}
+  .cards-3{grid-template-columns:1fr}
+  @media(min-width:720px){.cards-3{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--blanc);border:1px solid #e7eefc;border-radius:var(--rayon);padding:22px;box-shadow:var(--ombre)}
+  .card h3{font-size:18px;margin-bottom:6px}
+  .price{font-size:30px;font-weight:800;color:var(--bleu);margin:10px 0}
+  .price small{font-size:14px;color:var(--gris);font-weight:500}
+  .card ul{list-style:none;margin:12px 0 18px}
+  .card li{padding:5px 0 5px 24px;position:relative;font-size:14px;color:var(--gris)}
+  .card li:before{content:"✓";position:absolute;left:0;color:var(--vert);font-weight:800}
+  .steps{counter-reset:s;display:grid;gap:14px}
+  @media(min-width:720px){.steps{grid-template-columns:repeat(4,1fr)}}
+  .step{background:#fff;border:1px solid #e7eefc;border-radius:var(--rayon);padding:18px}
+  .step:before{counter-increment:s;content:"0" counter(s);display:block;font-weight:800;color:var(--bleu);font-size:20px;margin-bottom:6px}
+  .faq details{border:1px solid #e7eefc;border-radius:12px;padding:14px 16px;margin-bottom:10px;background:#fff}
+  .faq summary{font-weight:700;cursor:pointer}
+  .faq p{margin-top:8px;color:var(--gris);font-size:15px}
+  .demo{display:grid;gap:12px;grid-template-columns:1fr}
+  @media(min-width:720px){.demo{grid-template-columns:1fr 1fr}}
+  .demo a{padding:16px;border-radius:12px;background:#fff;border:1px solid #e7eefc;display:block}
+  .demo a b{display:block;color:var(--noir)}
+  .demo a span{color:var(--gris);font-size:13px}
+  form.contact{background:#fff;border:1px solid #e7eefc;border-radius:var(--rayon);padding:22px;box-shadow:var(--ombre)}
+  label{display:block;font-weight:600;font-size:14px;margin:12px 0 6px}
+  input,textarea,select{width:100%;padding:11px 12px;border:1px solid #d4def0;border-radius:10px;font-size:15px;font-family:inherit}
+  .note{font-size:13px;color:var(--gris);margin-top:10px}
+  .legal{background:#fff;border-top:1px solid #e7eefc}
+  .legal h3{font-size:18px;margin:22px 0 8px;color:var(--bleu-fonce)}
+  .legal p,.legal li{font-size:14px;color:var(--gris);margin-bottom:8px}
+  .legal ul{padding-left:20px}
+  .guarantee{background:#eafaf3;border:1px solid #c7eedd;border-radius:var(--rayon);padding:18px;margin:18px 0;color:#0c6b4f;font-weight:600}
+  footer{background:var(--noir);color:#cdd9ef;padding:30px 0;font-size:13px;text-align:center}
+  .center{text-align:center}
+  .muted{color:var(--gris);font-size:14px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="logo">WebPourPros</div>
+    <a class="cta" href="#devis">Devis gratuit</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="badge">⚡ Site pro livré en 5 jours ouvrés</span>
+    <h1>Un site qui vous amène des clients,<br><span>sans vous prendre la tête</span></h1>
+    <p class="sub">Site vitrine mobile-first, pensé pour convertir (prise de rendez-vous &amp; devis), livré en 5 jours, prix fixe, sans engagement. Pour artisans, commerçants, coaches et professions libérales.</p>
+    <a class="btn" href="#devis">Demander mon devis gratuit</a>
+    <div class="proofline">✓ Sans abonnement piège &nbsp;•&nbsp; ✓ Paiement à la livraison &nbsp;•&nbsp; ✓ Garantie satisfait ou remboursé 14 jours</div>
+  </div>
+</section>
+
+<!-- PROBLÈME -->
+<section>
+  <div class="container">
+    <h2>Vos clients vous cherchent sur Google. Ils ne vous trouvent pas.</h2>
+    <p class="lead">En France, plus de 60 % des recherches locales se font depuis un mobile. Si vous n'avez pas de site pro (ou un site obsolète), vous perdez des clients chaque semaine à cause d'un concurrent mieux visible.</p>
+    <div class="grid cards-3">
+      <div class="card"><h3>😕 « J'ai pas le temps »</h3><p class="muted">Vous gérez votre activité, pas le code. Nous nous occupons de tout.</p></div>
+      <div class="card"><h3>💸 « Les agences sont trop chères »</h3><p class="muted">2 000–5 000 € et 2 mois de délai. Nos formules commencent à 190 €.</p></div>
+      <div class="card"><h3>📱 « Mon site est pas fait pour mobile »</h3><p class="muted">Tous nos sites sont mobile-first : c'est là que vos clients sont.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFRE -->
+<section style="background:#fff">
+  <div class="container">
+    <h2>Nos formules (prix fixes, hors taxes)</h2>
+    <p class="lead">Prestation B2B pour professionnels. Pas de surprise : vous savez ce que vous payez avant de commencer.</p>
+    <div class="grid cards-3">
+      <div class="card">
+        <h3>Page unique</h3>
+        <div class="price">190 €<small> HT</small></div>
+        <ul>
+          <li>1 page mobile-first</li>
+          <li>Accueil + services + zone</li>
+          <li>Formulaire contact / WhatsApp</li>
+          <li>Carte Google Maps</li>
+          <li>Livraison en 5 jours</li>
+        </ul>
+        <a class="btn ghost" href="#devis">Choisir</a>
+      </div>
+      <div class="card" style="border-color:var(--bleu);box-shadow:0 12px 40px rgba(11,92,255,.18)">
+        <h3>★ Vitrine 3–5 pages</h3>
+        <div class="price">390 €<small> HT</small></div>
+        <ul>
+          <li>Tout de la formule 1 page</li>
+          <li>Pages Services, À propos, Contact</li>
+          <li>1 article SEO local</li>
+          <li>Setup Google Business Profile</li>
+          <li>Livraison en 5 jours</li>
+        </ul>
+        <a class="btn" href="#devis">Choisir</a>
+      </div>
+      <div class="card">
+        <h3>Maintenance</h3>
+        <div class="price">49 €<small> /mois HT</small></div>
+        <ul>
+          <li>2 mises à jour / mois</li>
+          <li>Sauvegardes automatiques</li>
+          <li>Surveillance Google Business</li>
+          <li>Sans engagement</li>
+          <li>Annulable à tout moment</li>
+        </ul>
+        <a class="btn ghost" href="#devis">Choisir</a>
+      </div>
+    </div>
+    <div class="guarantee">🛡️ Garantie « satisfait ou remboursé » 14 jours : si le site ne vous convient pas, on vous rembourse intégralement.</div>
+  </div>
+</section>
+
+<!-- COMMENT ÇA MARCHE -->
+<section>
+  <div class="container">
+    <h2>Comment ça marche</h2>
+    <p class="lead">Quatre étapes, zéro complication.</p>
+    <div class="steps">
+      <div class="step"><b>Devis gratuit</b><p class="muted">Vous remplissez le formulaire, on vous répond sous 24 h avec un devis clair.</p></div>
+      <div class="step"><b>Acompte 50 %</b><p class="muted">Paiement sécurisé en ligne (carte ou virement). On démarre la construction.</p></div>
+      <div class="step"><b>Construction 5 jours</b><p class="muted">Site mobile-first, textes rédigés pour vous, mise en ligne gratuite.</p></div>
+      <div class="step"><b>Livraison + solde</b><p class="muted">Vous recevez le lien, le guide d'utilisation, et on encaisse le solde.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREUVE -->
+<section style="background:#fff">
+  <div class="container">
+    <h2>Des exemples concrets</h2>
+    <p class="lead">Voici des démonstrations réelles de sites que nous construisons (modèles personnalisables par métier et ville).</p>
+    <div class="demo">
+      <a href="#"><b>coiffure-lyon</b><span>Démo site vitrine coiffeuse — mobile-first, prise de RDV</span></a>
+      <a href="#"><b>plomberie-bordeaux</b><span>Démo site artisan — formulaire devis + carte</span></a>
+    </div>
+    <p class="note">⚠️ Les liens ci-dessus sont des emplacements à remplir avec VOS démos réelles (hébergées gratuitement sur Netlify/GitHub Pages). Ne publiez pas de faux témoignages : ajoutez de vrais retours clients après votre première vente, avec leur accord.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container faq">
+    <h2>Questions fréquentes</h2>
+    <details><summary>Combien de temps pour avoir mon site ?</summary><p>5 jours ouvrès après validation du devis et encaissement de l'acompte. La formule maintenance permet ensuite des mises à jour rapides.</p></details>
+    <details><summary>Dois-je acheter un nom de domaine ?</summary><p>Non au démarrage : on héberge gratuitement sur un sous-domaine (ex. votresite.netlify.app). Pour un domaine .fr/~10 €/an, on peut le mettre en place si vous le souhaitez.</p></details>
+    <details><summary>Comment je paie ? Est-ce sécurisé ?</summary><p>Par carte ou virement via Payoneer (société cotée au NASDAQ, utilisée mondialement). Acompte 50 % pour démarrer, solde à la livraison.</p></details>
+    <details><summary>Je ne suis pas à l'aise avec le technique…</summary><p>C'est précisément pour cela que nous existons. Vous recevez un guide d'utilisation d'une page et nous gérons la mise en ligne.</p></details>
+    <details><summary>Et le référencement (Google) ?</summary><p>Le site est conçu proprement (mobile-first, structure, texte local). La formule vitrine inclut 1 article SEO local et le setup Google Business Profile pour apparaître dans les recherches locales.</p></details>
+    <details><summary>Puis-je résilier la maintenance ?</summary><p>Oui, sans engagement, à tout moment.</p></details>
+  </div>
+</section>
+
+<!-- DEVIS / CONTACT -->
+<section id="devis" style="background:#fff">
+  <div class="container">
+    <h2>Devis gratuit en 24 h</h2>
+    <p class="lead">Remplissez le formulaire. Après validation, nous envoyons le devis et le lien de paiement sécurisé (Payoneer).</p>
+    <form class="contact" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+      <label for="nom">Nom / Société *</label>
+      <input id="nom" name="nom" required placeholder="Ex. Salon Sophie, Lyon">
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" required placeholder="vous@exemple.fr">
+      <label for="tel">Téléphone (optionnel)</label>
+      <input id="tel" name="tel" placeholder="06 00 00 00 00">
+      <label for="metier">Votre métier / activité *</label>
+      <input id="metier" name="metier" required placeholder="Coiffeuse, plombier, coach…">
+      <label for="formule">Formule souhaitée *</label>
+      <select id="formule" name="formule">
+        <option>Page unique — 190 € HT</option>
+        <option>Vitrine 3–5 pages — 390 € HT</option>
+        <option>Maintenance — 49 €/mois HT</option>
+        <option>Je ne sais pas encore</option>
+      </select>
+      <label for="msg">Votre besoin en 2 lignes</label>
+      <textarea id="msg" name="message" rows="3" placeholder="Ex. Je n'ai pas de site, je veux être trouvé sur Google à Lyon."></textarea>
+      <button class="btn" type="submit" style="margin-top:16px">Envoyer ma demande</button>
+      <p class="note">⚙️ À configurer (gratuit) : remplacez <code>VOTRE_ID_FORMSPREE</code> par votre lien Formspree (formspree.io, 50 envois/mois gratuits). En attendant, vous pouvez aussi nous écrire directement à <a href="mailto:contact@webpourpros.example">contact@webpourpros.example</a>.</p>
+    </form>
+  </div>
+</section>
+
+<!-- MENTIONS LÉGALES / CGV / CONFIDENTIALITÉ -->
+<section class="legal">
+  <div class="container">
+    <h2>Informations légales</h2>
+
+    <h3>1. Mentions légales</h3>
+    <p><b>Éditeur du site :</b> WebPourPros — activité de création de sites vitrines pour professionnels, exercée à distance depuis Madagascar par un entrepreneur indépendant.</p>
+    <p><b>Contact :</b> contact@webpourpros.example</p>
+    <p><b>Responsable de la publication :</b> [Nom du gérant — à compléter].</p>
+    <p><b>Hébergement :</b> Netlify, Inc. (ou GitHub Pages) — serveurs hébergés hors Union européenne. Les données collectées via le formulaire de contact sont traitées conformément à l'article 4 ci-dessous.</p>
+    <p><b>Activité transfrontalière :</b> prestataire établi hors UE (Madagascar) fournissant une prestation de services à des professionnels établis en France/UE. Conformément à la règle de territorialité de la TVA, les prestations B2B sont soumises à l'autoliquidation (reverse charge) : le client professionnel autoliquide la TVA dans son pays (mention « TVA non applicable — art. 196 de la directive 2006/112/CE » sur la facture). Aucune TVA n'est facturée par le prestataire.</p>
+
+    <h3>2. Conditions Générales de Vente (CGV)</h3>
+    <ul>
+      <li><b>Objet :</b> les présentes CGV régissent les prestations de création de site vitrine commandées par le Client professionnel.</li>
+      <li><b>Devis :</b> toute prestation fait l'objet d'un devis gratuit préalable accepté par écrit (email).</li>
+      <li><b>Prix :</b> indiqués hors taxes (HT), en euros. Pour les clients professionnels UE avec n° de TVA, facturation HT en autoliquidation.</li>
+      <li><b>Acompte :</b> 50 % à la commande, solde à la livraison. Le délai de 5 jours ouvrés court après encaissement de l'acompte.</li>
+      <li><b>Livraison :</b> mise en ligne sur sous-domaine gratuit (sauf domaine fourni par le Client). Le Client doit fournir les éléments nécessaires (nom, ville, services, photos éventuelles).</li>
+      <li><b>Droit de rétractation :</b> les présentes prestations sont conclues B2B (professionnels). Pour toute prestation B2C (consommateur), le droit de rétractation de 14 jours du Code de la consommation (L. 221-18) s'applique, sauf renonciation expresse du consommateur et début d'exécution avant la fin du délai (L. 221-28, 1°), ce qui sera formalisé par une case à cocher « Je renonce à mon droit de rétractation dès la mise en ligne ».</li>
+      <li><b>Garantie :</b> satisfait ou remboursé sous 14 jours après livraison (remboursement intégral, hors frais de paiement déjà engagés).</li>
+      <li><b>Responsabilité :</b> le prestataire décline toute responsabilité sur le contenu fourni par le Client (exactitude, droits d'auteur, conformité de l'activité au droit applicable).</li>
+      <li><b>Résiliation maintenance :</b> sans engagement, à tout moment sur simple email.</li>
+    </ul>
+
+    <h3>3. Propriété intellectuelle</h3>
+    <p>Le Client reste propriétaire de ses contenus (textes, photos, marque). Le code fourni est cédé au Client après paiement intégral. Les outils/modèles génériques restent la propriété du prestataire.</p>
+
+    <h3>4. Politique de confidentialité (RGPD)</h3>
+    <ul>
+      <li><b>Responsable du traitement :</b> WebPourPros (coordonnées ci-dessus).</li>
+      <li><b>Données collectées :</b> nom/société, email, téléphone (optionnel), métier, message — uniquement via le formulaire de contact et dans le cadre de la relation commerciale.</li>
+      <li><b>Finalité :</b> répondre à votre demande de devis, exécuter la prestation, facturer.</li>
+      <li><b>Base légale :</b> mesures précontractuelles et exécution du contrat (art. 6-1-b RGPD).</li>
+      <li><b>Durée de conservation :</b> données prospects 24 mois ; clients 5 ans (facturation).</li>
+      <li><b>Sous-traitants :</b> Formspree (hébergement du formulaire, États-Unis — transfert encadré par clauses contractuelles types) ; Payoneer (paiement). Aucune revente de données.</li>
+      <li><b>Vos droits :</b> accès, rectification, effacement, opposition, limitation, portabilité. Exercez-les par email à contact@webpourpros.example. Réponse sous 1 mois.</li>
+      <li><b>Plainte :</b> vous pouvez saisir la CNIL (www.cnil.fr) si vous estimez vos droits non respectés.</li>
+    </ul>
+    <p class="note">Dernière mise à jour : 20/11/2026. Ce texte est un modèle à faire valider par un professionnel du droit conformément à votre situation (prestataire hors UE).</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    WebPourPros — Sites vitrines clés en main pour professionnels français · Devis gratuit sous 24 h<br>
+    Prestataire indépendant établi à Madagascar · Paiement sécurisé Payoneer
+  </div>
+</footer>
+</body>
+</html>
