@@ -61,5 +61,25 @@
 
 ---
 
+## 📅 2026-11-20 — J2 (outils de prospection + prépa test J3)
+
+### Actions faites (builder, sans dépense)
+- **`cibles.csv`** créé : gabarit de suivi + 12 lignes `EXEMPLE_` (à remplacer par de vraies entreprises issues de Google Maps).
+- **`prospection.md`** créé : SOP complète — méthode Google Maps en 30 min, routine 10 contacts/jour, message n°1 personnalisé par métier (coiffeuse Lyon / plombier Bordeaux), relances J+3 & J+7, et **préparation du test de paiement J3** (Payment Request Payoneer → retrait MCB).
+- **Niche par défaut** : coiffeurs (Lyon) + plombiers (Bordeaux), cohérente avec les démos déjà livrées. Changement possible en 1 min (remplacer les mots-clés).
+- **Coût dépensé : 0 €** ✅.
+
+### Reste à faire (humain)
+- [ ] **Remplir `cibles.csv`** avec 30–50 vraies cibles (recherche Google Maps « coiffeur Lyon » / « plombier Bordeaux », filtrer pas de site / site obsolète).
+- [ ] **Ouvrir le compte Payoneer** + activer le compte de réception EUR + Payment Request (toujours bloquant).
+- [ ] **Test J3** : envoyer une Payment Request Payoneer à un proche français (2–5 €) → il paie → vous retirez vers MCB → confirmer l'arrivée et noter les frais réels.
+- [ ] **Confirmer la niche** (coiffeurs/plombiers par défaut, ou autre).
+
+### Plan J3
+- Exécuter le **test de paiement J3** (validation chaîne Payoneer → MCB).
+- Dès validation : envoyer les **10 premiers contacts** réels depuis le CSV (Script A), planter le suivi.
+
+---
+
 ## 📅 À VENIR
 _(Remplir chaque jour selon le plan J1-30.)_
