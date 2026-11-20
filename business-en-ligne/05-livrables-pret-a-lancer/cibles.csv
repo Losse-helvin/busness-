@@ -1,0 +1,13 @@
+nom_entreprise,metier,ville,site_web,contact,canal,statut,date_contact,notes
+EXEMPLE_Coiffure_BelleVille,Coiffeuse,Lyon,"Non (pas de site)",Page Google Maps,Google Maps,a_contacter,,,remplacer par donnee reel
+EXEMPLE_Salon_CoupeExpress,Coiffeuse,Lyon,"Obsolète (2015)",Formulaire contact,Google Maps,a_contacter,,,site pas mobile
+EXEMPLE_ProPlomberie,Plombier,Bordeaux,"Non",Tel sur fiche,Google Maps,a_contacter,,,
+EXEMPLE_DepannageGG,Plombier,Bordeaux,"Oui mais lent",Email,Google Maps,a_contacter,,,ameliorer vitesse
+EXEMPLE_CoiffureLeFil,Coiffeuse,Lyon,"Non",Messenger,Groupe FB Commercants Lyon,a_contacter,,,
+EXEMPLE_TuyauPro,Plombier,Bordeaux,"Non",LinkedIn,Groupe FB/Artisans,a_contacter,,,
+EXEMPLE_SalonM,P,Coiffeuse,Lyon,"Obsolète",Page Google Maps,Google Maps,a_contacter,,,
+EXEMPLE_AquaServ,Plombier,Bordeaux,"Non",Tel sur fiche,Google Maps,a_contacter,,,
+EXEMPLE_HairLyon,Coiffeuse,Lyon,"Oui",Email,Google Maps,a_contacter,,,site peu pro
+EXEMPLE_PlombierSud,Plombier,Bordeaux,"Non",Messenger,Groupe FB Bordeaux,a_contacter,,,
+EXEMPLE_CoupeCoiff,Coiffeuse,Lyon,"Non",Page Google Maps,Google Maps,a_contacter,,,
+EXEMPLE_EauPlus,Plombier,Bordeaux,"Obsolète",Tel sur fiche,Google Maps,a_contacter,,,
